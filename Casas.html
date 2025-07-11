@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FanPage basado en Harry Potter">
+    <meta name="keywords" content="Harry Potter, Hogwarts, dumbledore, magia, informacion, fanpage,">
+    <meta name="author" content="Yaika Zapata">
+    <title>Las Casas de Hogwarts | Colegio de Magia y Hechicería</title>
+    <meta name="description" content="Descubre las cuatro casas de Hogwarts: Gryffindor, Slytherin, Ravenclaw y Hufflepuff. Conoce sus valores, fundadores y características únicas.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Magia.css">
+    <link rel="shortcut icon" href="icons8-harry-potter-16.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar mejorado -->
+   <nav class="navbar">
+  <div class="barra">Harry Potter</div>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="Personajes.html">Personajes</a>
+    <a href="Casas.html">Casas</a>
+    
+  </div>
+  <div class="barrabusqueda">
+    <input type="text" placeholder="Buscar..." />
+    <button>Buscar</button>
+  </div>
+  <div class="boton-tema" id="btnTema" title="Cambiar tema">
+  <i class="fas fa-moon"></i> <!-- Icono de luna (modo claro) -->
+  <i class="fas fa-sun d-none"></i> <!-- Icono de sol (modo oscuro, oculto inicialmente) -->
+</div>
+</nav>
+<div class="destellos"></div>
+
+    <!-- Hero Section -->
+       <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="container text-center">
+                <h1 class="display-3 magical-title">Las Casas de Hogwarts</h1>
+                <p class="lead">"Conoce su origen"</p>
+                <div class="scroll-down">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container magical-container">
+        <!-- Introducción -->
+        <section class="intro-section text-center py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title mb-4">El Sistema de Casas</h2>
+                    <p class="intro-text">El Colegio Hogwarts de Magia y Hechicería está dividido en cuatro casas, cada una fundada por uno de los grandes magos de la época. Los estudiantes son seleccionados en sus casas por el Sombrero Seleccionador durante su primer año, y esta elección determina gran parte de su experiencia en la escuela.</p>
+                    <div class="divider mx-auto"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tarjetas de Casas -->
+        <section class="houses-section py-5">
+            <div class="row g-4 justify-content-center">
+                <!-- Gryffindor -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="house-card gryffindor">
+                        <div class="card-inner">
+                            <div class="card-front text-center">
+                                <img src="fryflogo.jpg" alt="Escudo de Gryffindor" class="house-crest">
+                                <h3 class="house-name">Gryffindor</h3>
+                                <p class="house-motto"><i class="fas fa-quote-left"></i> Valentía, osadía y caballerosidad <i class="fas fa-quote-right"></i></p>
+                                <div class="house-colors">
+                                    <span class="color-swatch scarlet"></span>
+                                    <span class="color-swatch gold"></span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Gryffindor</h3>
+                                <p>Fundada por Godric Gryffindor, valora el coraje, la valentía y la determinación. Su animal emblemático es el león y sus colores son el escarlata y el dorado.</p>
+                                <ul class="house-details">
+                                    <li><i class="fas fa-ghost"></i> Fantasma: Nick Casi Decapitado</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Sala común: Torre de Gryffindor</li>
+                                    <li><i class="fas fa-fire"></i> Elemento: Fuego</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slytherin -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="house-card slytherin">
+                        <div class="card-inner">
+                            <div class="card-front text-center">
+                                <img src="slylogo.jpg" alt="Escudo de Slytherin" class="house-crest">
+                                <h3 class="house-name">Slytherin</h3>
+                                <p class="house-motto"><i class="fas fa-quote-left"></i> Astucia, ambición y determinación <i class="fas fa-quote-right"></i></p>
+                                <div class="house-colors">
+                                    <span class="color-swatch green"></span>
+                                    <span class="color-swatch silver"></span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Slytherin</h3>
+                                <p>Fundada por Salazar Slytherin, valora la ambición, la astucia y el ingenio. Su animal emblemático es la serpiente y sus colores son el verde y el plateado.</p>
+                                <ul class="house-details">
+                                    <li><i class="fas fa-ghost"></i> Fantasma: Barón Sanguinario</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Sala común: Mazmorras bajo el lago</li>
+                                    <li><i class="fas fa-tint"></i> Elemento: Agua</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ravenclaw -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="house-card ravenclaw">
+                        <div class="card-inner">
+                            <div class="card-front text-center">
+                                <img src="rawlogo.jpg" alt="Escudo de Ravenclaw" class="house-crest">
+                                <h3 class="house-name">Ravenclaw</h3>
+                                <p class="house-motto"><i class="fas fa-quote-left"></i> Inteligencia, creatividad y aprendizaje <i class="fas fa-quote-right"></i></p>
+                                <div class="house-colors">
+                                    <span class="color-swatch blue"></span>
+                                    <span class="color-swatch bronze"></span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Ravenclaw</h3>
+                                <p>Fundada por Rowena Ravenclaw, valora la inteligencia, la sabiduría y la creatividad. Su animal emblemático es el águila y sus colores son el azul y el bronce.</p>
+                                <ul class="house-details">
+                                    <li><i class="fas fa-ghost"></i> Fantasma: Dama Gris</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Sala común: Torre de Ravenclaw</li>
+                                    <li><i class="fas fa-wind"></i> Elemento: Aire</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hufflepuff -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="house-card hufflepuff">
+                        <div class="card-inner">
+                            <div class="card-front text-center">
+                                <img src="huplogo.jpg" alt="Escudo de Hufflepuff" class="house-crest">
+                                <h3 class="house-name">Hufflepuff</h3>
+                                <p class="house-motto"><i class="fas fa-quote-left"></i> Justicia, lealtad y paciencia <i class="fas fa-quote-right"></i></p>
+                                <div class="house-colors">
+                                    <span class="color-swatch yellow"></span>
+                                    <span class="color-swatch black"></span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Hufflepuff</h3>
+                                <p>Fundada por Helga Hufflepuff, valora la justicia, la lealtad y el trabajo duro. Su animal emblemático es el tejón y sus colores son el amarillo y el negro.</p>
+                                <ul class="house-details">
+                                    <li><i class="fas fa-ghost"></i> Fantasma: Fraile Gordo</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Sala común: Cerca de las cocinas</li>
+                                    <li><i class="fas fa-mountain"></i> Elemento: Tierra</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!-- Sección del Sombrero Seleccionador -->
+<section class="sorting-hat-section py-5 text-center">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h2 class="section-title mb-4">¿A qué casa perteneces?</h2>
+            <div class="sorting-hat-container">
+                <img src="sombrero.png" alt="Sombrero Seleccionador" class="sorting-hat" id="sortingHat">
+                <div class="hat-message" id="hatMessage">¡Ponte el sombrero para descubrir tu casa!</div>
+            </div>
+            <button class="btn btn-magical mt-4" id="sortingBtn">¡Prueba el Sombrero Seleccionador!</button>
+        </div>
+    </div>
+</section>
+
+        <!-- Tabla Comparativa -->
+        <section class="comparison-section py-5">
+            <h2 class="section-title text-center mb-5">Comparación de las Casas</h2>
+            <div class="table-responsive">
+                <table class="table table-hover table-magical">
+                    <thead>
+                        <tr>
+                            <th scope="col">Característica</th>
+                            <th scope="col">Gryffindor</th>
+                            <th scope="col">Slytherin</th>
+                            <th scope="col">Ravenclaw</th>
+                            <th scope="col">Hufflepuff</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Fundador</th>
+                            <td>Godric Gryffindor</td>
+                            <td>Salazar Slytherin</td>
+                            <td>Rowena Ravenclaw</td>
+                            <td>Helga Hufflepuff</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Valores</th>
+                            <td>Valentía, osadía, caballerosidad</td>
+                            <td>Ambición, astucia, determinación</td>
+                            <td>Inteligencia, sabiduría, creatividad</td>
+                            <td>Justicia, lealtad, paciencia</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Colores</th>
+                            <td><span class="badge bg-scarlet">Escarlata</span> <span class="badge bg-gold">Dorado</span></td>
+                            <td><span class="badge bg-green">Verde</span> <span class="badge bg-silver">Plateado</span></td>
+                            <td><span class="badge bg-blue">Azul</span> <span class="badge bg-bronze">Bronce</span></td>
+                            <td><span class="badge bg-yellow">Amarillo</span> <span class="badge bg-black">Negro</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Animal</th>
+                            <td><i class="fas fa-lion"></i> León</td>
+                            <td><i class="fas fa-snake"></i> Serpiente</td>
+                            <td><i class="fas fa-eagle"></i> Águila</td>
+                            <td><i class="fas fa-paw"></i> Tejón</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Elemento</th>
+                            <td><i class="fas fa-fire"></i> Fuego</td>
+                            <td><i class="fas fa-tint"></i> Agua</td>
+                            <td><i class="fas fa-wind"></i> Aire</td>
+                            <td><i class="fas fa-mountain"></i> Tierra</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section class="gallery-section py-5">
+            <h2 class="section-title text-center mb-5">Galería de Hogwarts</h2>
+            <div class="row g-3 gallery-grid">
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="salagry.jpg" alt="Sala común de Gryffindor" class="img-fluid">
+                        <div class="gallery-caption">Sala común de Gryffindor</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="sala sly.jpg" alt="Sala común de Slytherin" class="img-fluid">
+                        <div class="gallery-caption">Sala común de Slytherin</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="salaraw.jpg" alt="Sala común de Ravenclaw" class="img-fluid">
+                        <div class="gallery-caption">Sala común de Ravenclaw</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="huppl sasla comun.jpg" alt="Sala común de Hufflepuff" class="img-fluid">
+                        <div class="gallery-caption">Sala común de Hufflepuff</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="gran comedor.jpg" alt="Gran comedor de Hogwarts" class="img-fluid">
+                        <div class="gallery-caption">Gran comedor</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="campo.jpg" alt="Campo de Quidditch" class="img-fluid">
+                        <div class="gallery-caption">Campo de Quidditch</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Sobre la Página</h4>
+                    <p class="footer-text">Esta página está dedicada a ofrecer información breve y fascinante sobre el universo mágico de Harry Potter, compartiendo detalles sobre sus personajes, casas, libros y más. Además, es un proyecto para poner en práctica conocimientos de programación web, creando una experiencia interactiva y mágica.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link">Contactos</a></li>
+                        <li><a href="privacy-policy.html" class="footer-link">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Yayazl" target="_blank" aria-label="GitHub" class="footer-link">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/yaya_zl19/" target="_blank" aria-label="Instagram" class="footer-link">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-text text-center">
+                © 2025 Harry Potter Fanpage | Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Masmagia.js"></script>
+</body>
+</html>

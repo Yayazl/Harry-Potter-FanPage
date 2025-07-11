@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="FanPage basado en Harry Potter">
+    <meta name="keywords" content="Harry Potter, Hogwarts, dumbledore, magia, informacion, fanpage,">
+    <meta name="author" content="Yaika Zapata">
+    <title>Personajes de Harry Potter</title>
+    <meta name="description" content="Explora los personajes principales, secundarios, fundadores, criaturas y objetos mágicos del mundo de Harry Potter.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap">
+    <link rel="stylesheet" href="Magia.css">
+    <link rel="shortcut icon" href="icons8-harry-potter-16.png" type="image/x-icon">
+</head>
+<body class="personajes-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="barra">Harry Potter</div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="Personajes.html" class="active">Personajes</a>
+            <a href="Casas.html">Casas</a>
+        </div>
+        <div class="barrabusqueda">
+            <input type="text" placeholder="Buscar..." />
+            <button>Buscar</button>
+        </div>
+        <div class="boton-tema" id="btnTema" title="Cambiar tema">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun d-none"></i>
+        </div>
+    </nav>
+    <div class="destellos"></div>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="container text-center">
+                <h1 class="display-3 magical-title">Personajes de Harry Potter</h1>
+                <p class="lead">"La historia no termina aquí."</p>
+                <div class="scroll-down">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="container magical-container">
+
+
+        <!-- Personajes Principales -->
+        <section id="main-characters" class="py-5">
+            <h2 class="section-title text-center mb-5">Personajes Principales</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="harry  foto.jpeg" alt="Harry Potter">
+                        <div class="character-info">
+                            <h3>Harry Potter</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 31 de julio de 1980</p>
+                            <p><strong>Actor:</strong> Daniel Radcliffe</p>
+                            <p>Es el protagonista de la historia, el "Niño que Vivió" después de que Lord Voldemort intentara asesinarlo cuando era un bebé.</p>
+                            <p><strong>Hechos relevantes:</strong> Derrotó a Lord Voldemort, fundó el Ejército de Dumbledore, se convirtió en auror.</p>
+                            <div class="quote">"Las cicatrices pueden ser útiles. Tengo una arriba de la rodilla izquierda que es un mapa perfecto del metro de Londres."</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="ron foto.png" alt="Ron Weasley">
+                        <div class="character-info">
+                            <h3>Ron Weasley</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 1 de marzo de 1980</p>
+                            <p><strong>Actor:</strong> Rupert Grint</p>
+                            <p>Es el mejor amigo de Harry, miembro de la familia Weasley conocida por su cabello rojo y su falta de riqueza material.</p>
+                            <p><strong>Hechos relevantes:</strong> Jugó en el equipo de Quidditch de Gryffindor, destruyó un horrocrux, se convirtió en auror.</p>
+                            <div class="quote">"¿Eso? ¡Es lógico! Por eso las chicas no pueden hacer hechizos, se les va la cabeza con cosas así."</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="hermione foto.jpeg" alt="Hermione Granger">
+                        <div class="character-info">
+                            <h3>Hermione Granger</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 19 de septiembre de 1979</p>
+                            <p><strong>Actriz:</strong> Emma Watson</p>
+                            <p>Amiga íntima de Harry y Ron, que proviene del mundo no mágico (es una "sangre sucia").</p>
+                            <p><strong>Hechos relevantes:</strong> Fundó el ED, luchó por los derechos de los elfos domésticos, se convirtió en Ministra de Magia.</p>
+                            <div class="quote">"¡Los libros! Y la inteligencia! Hay cosas más importantes: la amistad y el valor!"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="dracco malfoy.jpeg" alt="Draco Malfoy">
+                        <div class="character-info">
+                            <h3>Draco Malfoy</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 5 de junio de 1980</p>
+                            <p><strong>Actor:</strong> Tom Felton</p>
+                            <p>Archienemigo de Harry Potter, miembro de una familia de sangre pura con conexiones con los Mortífagos.</p>
+                            <p><strong>Hechos relevantes:</strong> Intentó asesinar a Dumbledore, se convirtió en mortífago, finalmente se redimió.</p>
+                            <div class="quote">"Mi padre oirá de esto."</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="albuss foto.jpg" alt="Albus Dumbledore">
+                        <div class="character-info">
+                            <h3>Albus Dumbledore</h3>
+                            <p><strong>Fecha de nacimiento:</strong> Agosto de 1881</p>
+                            <p><strong>Actor:</strong> Richard Harris (películas 1-2), Michael Gambon (películas 3-8)</p>
+                            <p>Director de la escuela Hogwarts de Magia y Hechicería, considerado el mago más poderoso de su tiempo.</p>
+                            <p><strong>Hechos relevantes:</strong> Derrotó a Grindelwald, descubrió los doce usos de la sangre de dragón, planeó la derrota de Voldemort.</p>
+                            <div class="quote">"La felicidad se puede hallar hasta en los más oscuros momentos, si somos capaces de usar bien la luz."</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="snapee.jpg" alt="Severus Snape">
+                        <div class="character-info">
+                            <h3>Severus Snape</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 9 de enero de 1960</p>
+                            <p><strong>Actor:</strong> Alan Rickman</p>
+                            <p>Profesor de Pociones en Hogwarts y posteriormente de Defensa Contra las Artes Oscuras, también director de la casa Slytherin.</p>
+                            <p><strong>Hechos relevantes:</strong> Espía doble, protegió a Harry por amor a Lily, mató a Dumbledore por orden de este.</p>
+                            <div class="quote">"Siempre."</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="voldi.jpg" alt="Lord Voldemort">
+                        <div class="character-info">
+                            <h3>Lord Voldemort</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 31 de diciembre de 1926</p>
+                            <p><strong>Actor:</strong> Ralph Fiennes</p>
+                            <p>Villano del mundo mágico cuyo objetivo es matar a Harry Potter y purificar el mundo mágico de los no puros.</p>
+                            <p><strong>Hechos relevantes:</strong> Creó los horrocruxes, inició dos guerras mágicas, fue finalmente derrotado por Harry.</p>
+                            <div class="quote">"No hay bien ni mal, solo hay poder y aquellos demasiado débiles para buscarlo."</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="hagriiid.jpeg" alt="Rubeus Hagrid">
+                        <div class="character-info">
+                            <h3>Rubeus Hagrid</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 6 de diciembre de 1928</p>
+                            <p><strong>Actor:</strong> Robbie Coltrane</p>
+                            <p>Guarda bosques y guardián de las llaves de Hogwarts, medio gigante y gran amigo de Harry Potter.</p>
+                            <p><strong>Hechos relevantes:</strong> Introdujo a Harry al mundo mágico, crió muchas criaturas peligrosas, se convirtió en profesor de Cuidado de Criaturas Mágicas.</p>
+                            <div class="quote">"Todos los profesores de Defensa Contra las Artes Oscuras se van después de un año. ¡Hace ya doce años que estoy esperando!"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personajes Secundarios -->
+        <section id="secondary-characters" class="py-5">
+            <h2 class="section-title text-center mb-5">Personajes Secundarios</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="luna foto.jpeg" alt="Luna Lovegood">
+                        <div class="character-info">
+                            <h3>Luna Lovegood</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 13 de febrero de 1981</p>
+                            <p><strong>Actriz:</strong> Evanna Lynch</p>
+                            <p>Estudiante de Ravenclaw conocida por sus creencias excéntricas y su personalidad única.</p>
+                            <p><strong>Hechos relevantes:</strong> Miembro del ED, ayudó a encontrar un horrocrux, se convirtió en magizoóloga.</p>
+                            <div class="quote">"Las cosas que perdemos tienen una forma de volver a nosotros, aunque no siempre de la manera que esperamos."</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="neville.jpg" alt="Neville Longbottom">
+                        <div class="character-info">
+                            <h3>Neville Longbottom</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 30 de julio de 1980</p>
+                            <p><strong>Actor:</strong> Matthew Lewis</p>
+                            <p>Estudiante torpe de Gryffindor que demuestra gran valentía a lo largo de la serie.</p>
+                            <p><strong>Hechos relevantes:</strong> Mató la serpiente Nagini, lideró el ED en Hogwarts, se convirtió en profesor de Herbología.</p>
+                            <div class="quote">"No importa lo que diga Dumbledore, no importa lo que hagas o lo que digan los demás: yo estaré a tu lado, Harry."</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="bella foto.jpeg" alt="Bellatrix Lestrange">
+                        <div class="character-info">
+                            <h3>Bellatrix Lestrange</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 1951</p>
+                            <p><strong>Actriz:</strong> Helena Bonham Carter</p>
+                            <p>Mortífaga leal a Voldemort, prima de Sirius Black y miembro de la familia Black.</p>
+                            <p><strong>Hechos relevantes:</strong> Torturó a los padres de Neville, mató a Sirius Black, fue asesinada por Molly Weasley.</p>
+                            <div class="quote">"¡Nunca uses mi varita, Lucius!"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="siriussss.jpeg" alt="Sirius Black">
+                        <div class="character-info">
+                            <h3>Sirius Black</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 3 de noviembre de 1959</p>
+                            <p><strong>Actor:</strong> Gary Oldman</p>
+                            <p>Padrino de Harry Potter, miembro de la Orden del Fénix y mejor amigo de James Potter.</p>
+                            <p><strong>Hechos relevantes:</strong> Falsamente acusado de traición, escapó de Azkaban, ayudó a Harry, muerto por Bellatrix.</p>
+                            <div class="quote">"Los que nos quieren de verdad nunca nos dejan del todo, y siempre puedes encontrarlos... aquí." (señalando el corazón)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="lucius-malfoy_2png.png" alt="Lucius Malfoy">
+                        <div class="character-info">
+                            <h3>Lucius Malfoy</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 1954</p>
+                            <p><strong>Actor:</strong> Jason Isaacs</p>
+                            <p>Padre de Draco Malfoy, mortífago y miembro influyente del Ministerio de Magia.</p>
+                            <p><strong>Hechos relevantes:</strong> Dio el diario de Tom Riddle a Ginny, perdió el favor de Voldemort, sobrevivió a la guerra.</p>
+                            <div class="quote">"Que el Señor Tenebroso no se entere de que hemos fallado, lo repito."</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="character-card">
+                        <img src="minerva actriz.jpeg" alt="Minerva McGonagall">
+                        <div class="character-info">
+                            <h3>Minerva McGonagall</h3>
+                            <p><strong>Fecha de nacimiento:</strong> 4 de octubre de 1935</p>
+                            <p><strong>Actriz:</strong> Maggie Smith</p>
+                            <p>Profesora de Transformaciones y directora de Gryffindor, posteriormente directora de Hogwarts.</p>
+                            <p><strong>Hechos relevantes:</strong> Miembro de la Orden del Fénix, luchó en la Batalla de Hogwarts, gran animaga.</p>
+                            <div class="quote">"¿Por qué razón estaría haciendo caer copos de nieve en mi oficina?"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fundadores de Hogwarts -->
+        <section id="founders" class="py-5">
+            <h2 class="section-title text-center mb-5">Fundadores de Hogwarts</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="founder-card">
+                        <img src="goodrick foto.png" alt="Godric Gryffindor">
+                        <h3>Godric Gryffindor</h3>
+                        <p>Conocido por su valentía y caballerosidad. Creía que cualquier estudiante que mostrara habilidades mágicas debía ser admitido en Hogwarts, independientemente de su linaje.</p>
+                        <p><strong>Legado:</strong> Espada de Gryffindor, Sombrero Seleccionador.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="founder-card">
+                        <img src="helga foto.png" alt="Helga Hufflepuff">
+                        <h3>Helga Hufflepuff</h3>
+                        <p>Valoraba la lealtad, la paciencia, el trabajo duro y la justicia. Era conocida por su amabilidad y por tratar a todos por igual.</p>
+                        <p><strong>Legado:</strong> Copa de Hufflepuff, cocinas de Hogwarts.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="founder-card">
+                        <img src="rowena foto.png" alt="Rowena Ravenclaw">
+                        <h3>Rowena Ravenclaw</h3>
+                        <p>Famosa por su inteligencia y creatividad. Diseñó el plano cambiante de Hogwarts y valoraba el aprendizaje por encima de todo.</p>
+                        <p><strong>Legado:</strong> Diadema de Ravenclaw, torre de Ravenclaw.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="founder-card">
+                        <img src="salazar foto.png" alt="Salazar Slytherin">
+                        <h3>Salazar Slytherin</h3>
+                        <p>Creía que solo los magos de sangre pura debían ser admitidos en Hogwarts. Era un hablante de pársel y experto en artes oscuras.</p>
+                        <p><strong>Legado:</strong> Cámara de los Secretos, relicario de Slytherin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cronología del Mundo Mágico -->
+        <section id="timeline" class="py-5">
+            <h2 class="section-title text-center mb-5">Cronología del Mundo Mágico</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Antes de Voldemort</h3>
+                        <p><strong>990 d.C.</strong> - Fundación de Hogwarts por los cuatro fundadores.</p>
+                        <p><strong>1926</strong> - Nacimiento de Tom Riddle (Lord Voldemort).</p>
+                        <p><strong>1943</strong> - Tom Riddle abre la Cámara de los Secretos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Primera Guerra Mágica</h3>
+                        <p><strong>1970</strong> - Voldemort comienza a ganar seguidores.</p>
+                        <p><strong>1980</strong> - Nacimiento de Harry Potter. Profecía sobre él y Voldemort.</p>
+                        <p><strong>1981</strong> - Voldemort intenta matar a Harry pero es derrotado.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Años de Hogwarts</h3>
+                        <p><strong>1991</strong> - Harry comienza en Hogwarts, descubre la piedra filosofal.</p>
+                        <p><strong>1992</strong> - Apertura de la Cámara de los Secretos.</p>
+                        <p><strong>1993</strong> - Sirius Black escapa de Azkaban.</p>
+                        <p><strong>1994</strong> - Torneo de los Tres Magos, regreso de Voldemort.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Segunda Guerra Mágica</h3>
+                        <p><strong>1996</strong> - Batalla del Departamento de Misterios.</p>
+                        <p><strong>1997</strong> - Muerte de Dumbledore.</p>
+                        <p><strong>1998</strong> - Batalla de Hogwarts, muerte de Voldemort.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Frases Memorables -->
+        <section id="quotes" class="py-5">
+            <h2 class="section-title text-center mb-5">Frases Memorables</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="quote-item">
+                        <p>"Las cicatrices pueden ser útiles. Tengo una arriba de la rodilla izquierda que es un mapa perfecto del metro de Londres."</p>
+                        <p class="author">- Harry Potter</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="quote-item">
+                        <p>"La felicidad se puede hallar hasta en los más oscuros momentos, si somos capaces de usar bien la luz."</p>
+                        <p class="author">- Albus Dumbledore</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="quote-item">
+                        <p>"No son las habilidades lo que demuestra lo que somos, son nuestras decisiones."</p>
+                        <p class="author">- Albus Dumbledore</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="quote-item">
+                        <p>"Los que nos quieren de verdad nunca nos dejan del todo, y siempre puedes encontrarlos... aquí."</p>
+                        <p class="author">- Sirius Black</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="quote-item">
+                        <p>"¡Los libros! Y la inteligencia! Hay cosas más importantes: la amistad y el valor!"</p>
+                        <p class="author">- Hermione Granger</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="quote-item">
+                        <p>"No importa lo que diga Dumbledore, no importa lo que hagas o lo que digan los demás: yo estaré a tu lado, Harry."</p>
+                        <p class="author">- Ron Weasley</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="quote-item">
+                        <p>"Las cosas que perdemos tienen una forma de volver a nosotros, aunque no siempre de la manera que esperamos."</p>
+                        <p class="author">- Luna Lovegood</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="quote-item">
+                        <p>"Siempre."</p>
+                        <p class="author">- Severus Snape</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Actores y Actrices -->
+        <section id="actors" class="py-5">
+            <h2 class="section-title text-center mb-5">Actores y Actrices</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="actor-card">
+                        <img src="Daniel-Radcliffe.jpg" alt="Daniel Radcliffe">
+                        <h3>Daniel Radcliffe</h3>
+                        <p><strong>Interpretó a:</strong> Harry Potter</p>
+                        <p><strong>Otros trabajos:</strong> "El hombre de la máscara de hierro", "Swiss Army Man", "Kill Your Darlings".</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="actor-card">
+                        <img src="emma.jpg" alt="Emma Watson">
+                        <h3>Emma Watson</h3>
+                        <p><strong>Interpretó a:</strong> Hermione Granger</p>
+                        <p><strong>Otros trabajos:</strong> "La Bella y la Bestia", "Little Women", "The Perks of Being a Wallflower".</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="actor-card">
+                        <img src="rupert.jpeg" alt="Rupert Grint">
+                        <h3>Rupert Grint</h3>
+                        <p><strong>Interpretó a:</strong> Ron Weasley</p>
+                        <p><strong>Otros trabajos:</strong> "Servant", "Snatch", "CBGB".</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="actor-card">
+                        <img src="severus actor.jpg" alt="Alan Rickman">
+                        <h3>Alan Rickman</h3>
+                        <p><strong>Interpretó a:</strong> Severus Snape</p>
+                        <p><strong>Otros trabajos:</strong> "Die Hard", "Robin Hood: Prince of Thieves", "Love Actually".</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="actor-card">
+                        <img src="minerva actriz.jpeg" alt="Maggie Smith">
+                        <h3>Maggie Smith</h3>
+                        <p><strong>Interpretó a:</strong> Minerva McGonagall</p>
+                        <p><strong>Otros trabajos:</strong> "Downton Abbey", "The Prime of Miss Jean Brodie", "A Room with a View".</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="actor-card">
+                        <img src="lord voldii.jpg" alt="Ralph Fiennes">
+                        <h3>Ralph Fiennes</h3>
+                        <p><strong>Interpretó a:</strong> Lord Voldemort</p>
+                        <p><strong>Otros trabajos:</strong> "Schindler's List", "The English Patient", "The Grand Budapest Hotel".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Sobre la Página</h4>
+                    <p class="footer-text">Esta página está dedicada a ofrecer información breve y fascinante sobre el universo mágico de Harry Potter, compartiendo detalles sobre sus personajes, casas, libros y más. Además, es un proyecto para poner en práctica conocimientos de programación web, creando una experiencia interactiva y mágica.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link">Contactos</a></li>
+                        <li><a href="privacy-policy.html" class="footer-link">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Yayazl" target="_blank" aria-label="GitHub" class="footer-link">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/yaya_zl19/" target="_blank" aria-label="Instagram" class="footer-link">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-text text-center">
+                © 2025 Harry Potter Fanpage | Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS y FontAwesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="Masmagia.js"></script>
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="FanPage basado en Harry Potter">
+    <meta name="keywords" content="Harry Potter, Hogwarts, dumbledore, magia, informacion, fanpage,">
+    <meta name="author" content="Yaika Zapata">
+    <title>Mundo Mágico de Harry Potter</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="Magia.css">
+    <link rel="shortcut icon" href="icons8-harry-potter-16.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Cookie Alert -->
+    <div class="cookie-alert" id="cookieAlert">
+        <div class="cookie-content">
+            <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio. Al continuar, aceptas nuestra <a href="privacy-policy.html" target="_blank" class="text-gold">Política de Privacidad</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-primary" id="acceptCookies">Aceptar</button>
+                <button class="btn btn-outline-light" id="rejectCookies">Rechazar</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="barra">Harry Potter</div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="Personajes.html">Personajes</a>
+            <a href="Casas.html">Casas</a>
+        </div>
+        <div class="barrabusqueda">
+            <input type="text" placeholder="Buscar..." />
+            <button>Buscar</button>
+        </div>
+        <div class="boton-tema" id="btnTema" title="Cambiar tema">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun d-none"></i>
+        </div>
+    </nav>
+    <div class="destellos"></div>
+
+    <!-- Header Hero Section -->
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="container text-center">
+                <h1 class="display-3 magical-title">Bienvenido al mundo Magico</h1>
+                <p class="lead">"La historia apenas inicia"</p>
+                <div class="scroll-down">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container overlay py-4 rounded my-4">
+        <!-- Introducción -->
+        <section id="introduccion" class="py-4">
+            <h2 class="section-title">Bienvenidos al Mundo Mágico</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <i class="fas fa-question-circle me-2"></i>¿Qué es el mundo mágico?
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">El mundo mágico es una sociedad secreta que coexiste con el mundo muggle (no mágico), donde magos y brujas practican la magia libremente.</p>
+                            <button class="btn btn-sm btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="top" 
+                                    title="Los muggles son personas no mágicas">
+                                ¿Qué son muggles?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <i class="fas fa-eye-slash me-2"></i>Secreto Mágico
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Se mantiene oculto mediante el Estatuto Internacional del Secreto Mágico, establecido en 1689, y es supervisado por los Ministerios de Magia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <i class="fas fa-magic me-2"></i>Lo Fascinante
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Criaturas mágicas, hechizos, pociones, escuelas de magia, deportes como el Quidditch, y una historia que se remonta a siglos atrás.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="historia" class="py-4">
+            <h2 class="section-title">Historia del Mundo Mágico</h2>
+            
+            <div id="historyCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="historia.jpg" class="d-block w-100" alt="Orígenes de la magia">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Orígenes de la magia</h5>
+                            <p>La magia ha existido desde tiempos antiguos, con los primeros registros en civilizaciones como Egipto y Grecia.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Muggless.jpeg" class="d-block w-100" alt="Relación con muggles">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Relación con muggles</h5>
+                            <p>Históricamente tensa, con periodos de persecución mutua. Actualmente regulada por el Estatuto del Secreto.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ministerio de magiajpg.jpg" class="d-block w-100" alt="Instituciones mágicas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Instituciones mágicas</h5>
+                            <p>Las primeras escuelas de magia se fundaron en la Edad Media, siendo Hogwarts una de las más prestigiosas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="despues.jpg" class="d-block w-100" alt="Estado actual">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Estado actual</h5>
+                            <p>Tras la derrota de Voldemort en 1998, el mundo mágico experimentó reformas para mayor igualdad.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#historyCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#historyCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-scroll me-2"></i>Fundación de Hogwarts
+                        </div>
+                        <div class="card-body">
+                            <p>Hogwarts fue fundada alrededor del año 990 por cuatro grandes magos. Es considerada una de las mejores escuelas de magia y hechicería del mundo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-history me-2"></i>Evolución Mágica
+                        </div>
+                        <div class="card-body">
+                            <p>Desde varitas primitivas hasta los complejos artefactos actuales, la magia ha evolucionado con nuevas técnicas, hechizos y regulaciones.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Edad Media: Primeras varitas documentadas</li>
+                                <li class="list-group-item">1689: Estatuto Internacional del Secreto</li>
+                                <li class="list-group-item">1998: Fin de la Segunda Guerra Mágica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hogwarts -->
+        <section id="hogwarts" class="py-4">
+            <h2 class="section-title">Información sobre Hogwarts</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-castle me-2"></i>El Castillo de Hogwarts
+                        </div>
+                        <div class="card-body">
+                            <p>Ubicado en Escocia, el castillo de Hogwarts está protegido por numerosos encantamientos que lo hacen invisible para los muggles. Contiene cientos de habitaciones mágicas, torres, mazmorras y terrenos extensos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-graduation-cap me-2"></i>Sistema Educativo
+                        </div>
+                        <div class="card-body">
+                            <p>Los estudiantes asisten durante 7 años, desde los 11 hasta los 17-18 años. El sistema incluye:</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Exámenes</h6>
+                                    <ul>
+                                        <li>TIMO (Tercer Año)</li>
+                                        <li>EXTASIS (Séptimo Año)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Materias Principales</h6>
+                                    <ul>
+                                        <li>Pociones</li>
+                                        <li>Transformaciones</li>
+                                        <li>Defensa Contra las Artes Oscuras</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-calendar-alt me-2"></i>Festividades y Tradiciones
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <img src="torneoTresMagos.jpg" class="card-img-top" alt="Torneo de los Tres Magos">
+                                <div class="card-body">
+                                    <h5 class="card-title">Torneo de los Tres Magos</h5>
+                                    <p class="card-text">Competición peligrosa entre tres escuelas de magia que se celebra cada cinco años.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <img src="baile festivo.jpeg" class="card-img-top" alt="Baile de Navidad">
+                                <div class="card-body">
+                                    <h5 class="card-title">Baile de Navidad</h5>
+                                    <p class="card-text">Elegante evento social durante el Torneo donde los estudiantes bailan con acompañantes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <img src="casas.jpg" class="card-img-top" alt="Copa de las Casas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Copa de las Casas</h5>
+                                    <p class="card-text">Competición anual entre las cuatro casas por puntos ganados durante el año escolar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Libros -->
+        <section id="libros" class="py-4">
+            <h2 class="section-title">Lista de Libros</h2>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-book me-2"></i>Saga de Harry Potter
+                </div>
+                <div class="card-body">
+                    <ol class="list-group list-group-numbered list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Harry Potter y la Piedra Filosofal</div>
+                                1997
+                            </div>
+                            <span class="badge bg-primary rounded-pill" data-bs-toggle="tooltip" title="Primer libro de la saga">1°</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Harry Potter y la Cámara Secreta</div>
+                                1998
+                            </div>
+                            <span class="badge bg-primary rounded-pill">2°</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Harry Potter y el Prisionero de Azkaban</div>
+                                1999
+                            </div>
+                            <span class="badge bg-primary rounded-pill">3°</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Harry Potter y el Cáliz de Fuego</div>
+                                2000
+                            </div>
+                            <span class="badge bg-primary rounded-pill">4°</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Harry Potter y la Orden del Fénix</div>
+                                2003
+                            </div>
+                            <span class="badge bg-primary rounded-pill">5°</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Harry Potter y el Misterio del Príncipe</div>
+                                2005
+                            </div>
+                            <span class="badge bg-primary rounded-pill">6°</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Harry Potter y las Reliquias de la Muerte</div>
+                                2007
+                            </div>
+                            <span class="badge bg-primary rounded-pill">7°</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Películas -->
+        <section id="peliculas" class="py-4">
+            <h2 class="section-title">Lista de Películas</h2>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-film me-2"></i>Adaptaciones Cinematográficas
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Harry Potter y la Piedra Filosofal</div>
+                                        2001
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">1</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Harry Potter y la Cámara Secreta</div>
+                                        2002
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">2</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Harry Potter y el Prisionero de Azkaban</div>
+                                        2004
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">3</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Harry Potter y el Cáliz de Fuego</div>
+                                        2005
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">4</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Harry Potter y la Orden del Fénix</div>
+                                        2007
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Harry Potter y el Misterio del Príncipe</div>
+                                        2009
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Harry Potter y las Reliquias de la Muerte – Parte 1</div>
+                                        2010
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">7.1</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Harry Potter y las Reliquias de la Muerte – Parte 2</div>
+                                        2011
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">7.2</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-warning" role="alert">
+                <i class="fas fa-info-circle me-2"></i> Las películas fueron producidas por Warner Bros. entre 2001 y 2011.
+            </div>
+        </section>
+
+        <!-- Tipos de Magia -->
+        <section id="magia" class="py-4">
+            <h2 class="section-title">Tipos de Magia</h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="magic-type white-magic">
+                        <h4><i class="fas fa-shield-alt text-primary me-2"></i>Magia Blanca</h4>
+                        <p>Incluye hechizos defensivos, curativos y útiles para la vida diaria. Ejemplos: <span class="fw-bold text-primary" data-bs-toggle="tooltip" title="Hechizo patronus para protegerse de los dementores">Expecto Patronum</span>, <span class="fw-bold text-primary" data-bs-toggle="tooltip" title="Para curar heridas menores">Episkey</span>.</p>
+                    </div>
+                    
+                    <div class="magic-type dark-magic">
+                        <h4><i class="fas fa-skull text-secondary me-2"></i>Magia Oscura</h4>
+                        <p>Prohibida por su naturaleza peligrosa. Incluye las <button type="button" class="btn btn-link p-0 text-decoration-none" data-bs-toggle="popover" data-bs-content="Avada Kedavra (asesina), Crucio (tortura), Imperio (control mental)">Maldiciones Imperdonables</button>.</p>
+                    </div>
+                    
+                    <div class="magic-type elemental-magic">
+                        <h4><i class="fas fa-fire text-success me-2"></i>Magia Elemental</h4>
+                        <p>Manipulación de los elementos naturales: <span class="fw-bold text-success">Aguamenti</span> (agua), <span class="fw-bold text-success">Incendio</span> (fuego), <span class="fw-bold text-success">Ventus</span> (aire).</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-wand-magic-sparkles me-2"></i>Comparación de Magia
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Tipo</th>
+                                        <th>Dificultad</th>
+                                        <th>Legalidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Blanca</td>
+                                        <td>Variable</td>
+                                        <td class="text-success">Legal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Oscura</td>
+                                        <td>Alta</td>
+                                        <td class="text-danger">Ilegal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elemental</td>
+                                        <td>Media</td>
+                                        <td class="text-success">Legal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>No verbal</td>
+                                        <td>Alta</td>
+                                        <td class="text-success">Legal</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-volume-mute me-2"></i>Magia No Verbal
+                        </div>
+                        <div class="card-body">
+                            <p>Realizar hechizos sin pronunciar palabras, requiere gran concentración y dominio. Se enseña a partir del sexto año en Hogwarts.</p>
+                            <div class="alert alert-info">
+                                <i class="fas fa-lightbulb me-2"></i> <strong>Tip:</strong> La magia no verbal es esencial para duelos avanzados.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-monument me-2"></i>Magia Antigua
+                        </div>
+                        <div class="card-body">
+                            <p>Conjuros poderosos del pasado, algunos olvidados o demasiado peligrosos. Ejemplo: <span class="fw-bold">Fiendfyre</span> (fuego mágico incontrolable).</p>
+                            <button class="btn btn-sm btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#ancientMagic">
+                                Ver Ejemplo Avanzado
+                            </button>
+                            <div id="ancientMagic" class="collapse mt-2">
+                                <p class="small">El <em>Piertotum Locomotor</em> es un hechizo antiguo que anima estatuas y armaduras para defender un lugar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+ <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Sobre la Página</h4>
+                    <p class="footer-text">Esta página está dedicada a ofrecer información breve y fascinante sobre el universo mágico de Harry Potter, compartiendo detalles sobre sus personajes, casas, libros y más. Además, es un proyecto para poner en práctica conocimientos de programación web, creando una experiencia interactiva y mágica.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link">Contactos</a></li>
+                        <li><a href="privacy-policy.html" class="footer-link">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Yayazl" target="_blank" aria-label="GitHub" class="footer-link">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/yaya_zl19/" target="_blank" aria-label="Instagram" class="footer-link">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-text text-center">
+                © 2025 Harry Potter Fanpage | Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS personalizado -->
+    <script src="Masmagia.js"></script>
+</body>
+</html>

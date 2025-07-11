@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="description" content="FanPage basado en Harry Potter">
+    <meta name="keywords" content="Harry Potter, Hogwarts, dumbledore, magia, informacion, fanpage,">
+    <meta name="author" content="Yaika Zapata">
+  <title>El Profeta Mágico | Noticias de Harry Potter</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Google Fonts - Harry Potter -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="Magia.css">
+  <link rel="shortcut icon" href="icons8-harry-potter-16.png" type="image/x-icon">
+</head>
+<body>
+<nav class="navbar">
+  <div class="barra">Harry Potter</div>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="Personajes.html">Personajes</a>
+    <a href="Casas.html">Casas</a>
+    
+  </div>
+  <div class="barrabusqueda">
+    <input type="text" placeholder="Buscar..." />
+    <button>Buscar</button>
+  </div>
+  <div class="boton-tema" id="btnTema" title="Cambiar tema">
+  <i class="fas fa-moon"></i> 
+  <i class="fas fa-sun d-none"></i> \
+</div>
+</nav>
+<div class="destellos"></div>
+
+
+  <main class="container my-5">
+    <div class="news-container p-4 p-lg-5 rounded-3">
+    
+      <div class="text-center mb-5">
+        <h1 class="text-primary mb-3"><i class="fas fa-scroll me-2"></i>EL PROFETA MÁGICO</h1>
+        <p class="lead">Las noticias más recientes del mundo mágico</p>
+        <div class="alert alert-warning mt-3">
+          <i class="fas fa-exclamation-triangle me-2"></i> ¡Exclusivas! Todas las novedades sobre Harry Potter, Hogwarts Legacy y el universo mágico.
+        </div>
+      </div>
+      
+
+
+   
+      <section class="mb-5" id="actualizaciones">
+        <h2 class="category-title text-primary mb-4"><i class="fas fa-gamepad me-2"></i>Actualizaciones del Juego</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card news-card h-100">
+              <iframe width="400" height="400" src="https://www.youtube.com/embed/nezT6xR9dFM" title="CONSIGUE LAS MALDICIONES IMPERDONABLES EN HOGWARTS LEGACY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="card-body">
+                <span class="badge bg-success mb-2">NUEVO</span>
+                <h5 class="card-title">Tres Hechizos Prohibidos Añadidos a Hogwarts Legacy</h5>
+                <p class="card-text">Los jugadores ahora pueden aprender y usar los imperdonables, pero con consecuencias morales en la historia.</p>
+                <p class="news-date"><i class="far fa-clock me-1"></i> 15 de Julio, 2025</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a href="https://www.youtube.com/watch?v=nezT6xR9dFM" class="btn btn-sm btn-outline-primary">Detalles</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card news-card h-100">
+              <img src="legacy.jpg" class="card-img-top news-img" alt="Lanzamiento Warner">
+              <div class="card-body">
+                <span class="badge bg-info mb-2">PRÓXIMAMENTE</span>
+                <h5 class="card-title">Warner Bros</h5>
+                <p class="card-text">Lanzamiento en Nintendo Switch 2.</p>
+                <p class="news-date"><i class="far fa-clock me-1"></i> 10 de Julio, 2025</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a href="https://gaming-age.com/2025/05/warner-bros-games-conjures-up-a-fresh-hogwarts-legacy-nintendo-switch-2-gameplay-trailer/" class="btn btn-sm btn-outline-primary">Detalles</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card news-card h-100">
+              <img src="parcheee.jpeg" class="card-img-top news-img" alt="Parche de Actualización">
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">ACTUALIZACIÓN</span>
+                <h5 class="card-title">Parche 2.3.1: Corrección de Errores y Mejoras</h5>
+                <p class="card-text">El último parche soluciona problemas de rendimiento y añade pequeñas mejoras de calidad de vida.</p>
+                <p class="news-date"><i class="far fa-clock me-1"></i> 5 de Julio, 2025</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a href="https://gamerant.com/hogwarts-legacy-pc-update-creator-kit-patch-notes-june-2025/" class="btn btn-sm btn-outline-primary">Detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección: Eventos del Mundo Mágico -->
+      <section class="mb-5" id="eventos">
+        <h2 class="category-title text-primary mb-4"><i class="fas fa-calendar-star me-2"></i>Eventos Especiales</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card news-card h-100">
+              <img src="magic meeting.jpg" class="card-img-top news-img" alt="Convención Mágica">
+              <div class="card-body">
+                <span class="badge bg-danger mb-2">EVENTO</span>
+                <h5 class="card-title">Convención Mágica 2025: Fechas y Invitados Confirmados</h5>
+                <p class="card-text">Daniel Radcliffe, Emma Watson y otros actores confirmados para la convención anual en Londres este octubre.</p>
+                <p class="news-date"><i class="far fa-clock me-1"></i> 1 de Julio, 2025</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a href="https://www.magicmeeting.com.ar/" class="btn btn-sm btn-outline-primary">Detalles</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card news-card h-100">
+              <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.1897982302913!2d-0.4183276840941345!3d51.690586779663254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48764156d38f1c7d%3A0xdee11fbb5b8b0ba5!2sWarner%20Bros.%20Studio%20Tour%20London!5e0!3m2!1ses!2suk!4v1659363182246!5m2!1ses!2suk" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+              <div class="card-body">
+                <span class="badge bg-warning text-dark mb-2">EXPERIENCIA</span>
+                <h5 class="card-title">Nuevo Tour Inmersivo por los Estudios Warner Bros</h5>
+                <p class="card-text">Una experiencia completamente nueva que te permite "vivir" un día como estudiante de Hogwarts.</p>
+                <p class="news-date"><i class="far fa-clock me-1"></i> 28 de Junio, 2025</p>
+              </div>
+              <div class="card-footer bg-transparent">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card news-card h-100">
+              <img src="fan4.jpg" class="card-img-top news-img" alt="Fan Art">
+              <div class="card-body">
+                <h5 class="card-title">Concurso de Fan Art: Los Ganadores</h5>
+                <p class="card-text">Conoce las increíbles obras de arte creadas por fans que ganaron nuestro concurso anual.</p>
+                <p class="news-date"><i class="far fa-clock me-1"></i> 25 de Junio, 2025</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a href="https://thepopinsider.com/harry-potter-and-the-cursed-child-showbill-art-contest-news/" class="btn btn-sm btn-outline-primary">Detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+ <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Sobre la Página</h4>
+                    <p class="footer-text">Esta página está dedicada a ofrecer información breve y fascinante sobre el universo mágico de Harry Potter, compartiendo detalles sobre sus personajes, casas, libros y más. Además, es un proyecto para poner en práctica conocimientos de programación web, creando una experiencia interactiva y mágica.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link">Contactos</a></li>
+                        <li><a href="privacy-policy.html" class="footer-link">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4 class="footer-title">Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Yayazl" target="_blank" aria-label="GitHub" class="footer-link">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/yaya_zl19/" target="_blank" aria-label="Instagram" class="footer-link">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-text text-center">
+                © 2025 Harry Potter Fanpage | Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+
+  <!-- Bootstrap JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS Personalizado -->
+  <script src="Masmagia.js"></script>
+</body>
+</html>
